@@ -1,0 +1,751 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Zaenaab Al-Hommsi | Frontend Developer & WordPress Expert</title>
+  <meta name="description"
+    content="Portfolio of Zaenaab Al-Hommsi — Frontend Developer, WordPress Expert, and 5th-year Software Engineering student at SPU." />
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <!-- Google Fonts (preconnect for speed) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Fira+Code:wght@400;500&display=swap"
+    rel="stylesheet" />
+  <!-- Dev Icons (for tech logos) -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css" />
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+
+  <!-- ══════════════════════════════════════
+     NAVBAR
+══════════════════════════════════════ -->
+  <nav id="navbar" class="navbar">
+    <div class="container nav-inner">
+      <a href="#hero" class="nav-logo"><span>&lt;</span>Z.Hommsi<span>/&gt;</span></a>
+
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#wordpress">WordPress</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <!-- Dark / Light Mode Toggle -->
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+          <div class="toggle-thumb"><i class="fas fa-sun"></i></div>
+        </button>
+        <button class="hamburger" id="hamburger" aria-label="Open menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+    <!-- Mobile menu -->
+    <div class="nav-mobile" id="mobileNav">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#wordpress">WordPress</a>
+      <a href="#education">Education</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+
+
+  <!-- ══════════════════════════════════════
+     HERO
+══════════════════════════════════════ -->
+  <section id="hero" class="hero">
+    <div class="hero-bg">
+      <div class="orb orb-1"></div>
+      <div class="orb orb-2"></div>
+    </div>
+
+    <div class="container hero-content">
+      <div class="hero-grid">
+        <!-- LEFT: Text -->
+        <div>
+          <div class="hero-badge">
+            <span class="dot"></span>
+            Open to opportunities
+          </div>
+
+          <h1 class="hero-name">
+            Hi, I'm <span class="gradient-text">Zaenaab</span><br />
+            Al-Hommsi
+          </h1>
+
+          <p class="hero-role">
+            <strong id="typed">Frontend Developer</strong>
+            <span style="color: var(--text-muted); font-family: var(--font-code);">|</span>
+          </p>
+
+          <p class="hero-desc">
+            Passionate about crafting beautiful, high-performance web experiences.
+            I turn ideas into polished digital products — from pixel-perfect frontends
+            to powerful WordPress solutions.
+          </p>
+
+          <div class="hero-cta">
+            <a href="#projects" class="btn btn-primary">
+              <i class="fas fa-eye"></i> View My Work
+            </a>
+            <a href="#contact" class="btn btn-secondary">
+              <i class="fas fa-paper-plane"></i> Get In Touch
+            </a>
+          </div>
+        </div>
+
+        <!-- RIGHT: Avatar -->
+        <div class="hero-visual">
+          <div class="avatar-ring">
+            <div class="avatar-img">
+              <img src="images/myPhoto.png" alt="Zaenaab Al-Hommsi" class="avatar-photo" />
+            </div>
+          </div>
+
+          <!-- Floating info cards -->
+          <div class="hero-float-card card-wp">
+            <i class="fab fa-wordpress"></i>
+            WordPress Expert
+          </div>
+          <div class="hero-float-card card-code">
+            <i class="fas fa-code"></i>
+            Frontend Dev
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scroll hint -->
+    <div class="scroll-hint">
+      <div class="scroll-mouse"></div>
+      scroll down
+    </div>
+  </section>
+
+
+  <!-- ══════════════════════════════════════
+     ABOUT
+══════════════════════════════════════ -->
+  <section id="about" class="section about">
+    <div class="container">
+      <div class="about-grid">
+        <!-- Stats side -->
+        <div class="reveal">
+          <span class="section-tag">// about me</span>
+          <h2 class="section-title">Who I <span class="gradient-text">Am</span></h2>
+          <div class="about-stats">
+            <div class="stat-card">
+              <div class="stat-num"><span class="counter" data-target="4" data-suffix="+">0</span></div>
+              <div class="stat-label">Years of Learning</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-num"><span class="counter" data-target="10" data-suffix="+">0</span></div>
+              <div class="stat-label">Technologies</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-num"><span class="counter" data-target="15" data-suffix="+">0</span></div>
+              <div class="stat-label">Projects Built</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-num"><span class="counter" data-target="100" data-suffix="%">0</span></div>
+              <div class="stat-label">Passion</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bio side -->
+        <div class="reveal about-text" style="transition-delay: 0.2s">
+          <p>
+            I'm <strong>Zaenaab Al-Hommsi</strong>, a 5th-year Software Engineering student at Syrian Private University
+            (SPU)
+            with a strong passion for frontend development and web design. I love building experiences that
+            are not only functional, but also elegant and intuitive.
+          </p>
+          <p>
+            My journey started with curiosity about how websites work, and quickly evolved into a deep
+            love for writing clean HTML, crafting beautiful CSS, and bringing everything to life with JavaScript.
+            I also specialise in WordPress — from customising themes to building complete business websites.
+          </p>
+          <p>
+            When I'm not coding, I enjoy exploring new design trends, learning about software architecture,
+            and experimenting with animations and micro-interactions that make user interfaces feel alive.
+            I'm always looking for new challenges and opportunities to grow as a developer.
+          </p>
+
+          <div class="about-interests">
+            <span class="interest-tag">🎨 UI/UX Design</span>
+            <span class="interest-tag">⚡ Web Performance</span>
+            <span class="interest-tag">📱 Responsive Design</span>
+            <span class="interest-tag">🔧 Open Source</span>
+            <span class="interest-tag">🌐 WordPress Themes</span>
+            <span class="interest-tag">📚 Always Learning</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ══════════════════════════════════════
+     SKILLS
+══════════════════════════════════════ -->
+  <section id="skills" class="section">
+    <div class="container">
+      <div class="reveal">
+        <span class="section-tag">// skills</span>
+        <h2 class="section-title">My <span class="gradient-text">Toolkit</span></h2>
+        <p class="section-subtitle">Technologies and tools I work with to build great digital products.</p>
+      </div>
+
+      <div class="skills-grid reveal" style="transition-delay: 0.15s">
+        <!-- Frontend -->
+        <div class="skill-category">
+          <div class="skill-cat-title"><i class="fas fa-laptop-code"></i> Frontend</div>
+          <div class="skill-items">
+            <div class="skill-item">
+              <div class="skill-info"><span class="skill-name">HTML5</span><span class="skill-pct">95%</span></div>
+              <div class="skill-bar">
+                <div class="skill-fill" data-width="95%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info"><span class="skill-name">CSS3</span><span class="skill-pct">90%</span></div>
+              <div class="skill-bar">
+                <div class="skill-fill" data-width="90%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info"><span class="skill-name">JavaScript</span><span class="skill-pct">80%</span></div>
+              <div class="skill-bar">
+                <div class="skill-fill" data-width="80%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info"><span class="skill-name">SASS / SCSS</span><span class="skill-pct">75%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-fill" data-width="75%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Frameworks & Libraries -->
+        <div class="skill-category">
+          <div class="skill-cat-title"><i class="fas fa-layer-group"></i> Frameworks</div>
+          <div class="skill-items">
+            <div class="skill-item">
+              <div class="skill-info"><span class="skill-name">Bootstrap</span><span class="skill-pct">88%</span></div>
+              <div class="skill-bar">
+                <div class="skill-fill" data-width="88%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info"><span class="skill-name">Tailwind CSS</span><span class="skill-pct">82%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-fill" data-width="82%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info"><span class="skill-name">WordPress</span><span class="skill-pct">85%</span></div>
+              <div class="skill-bar">
+                <div class="skill-fill" data-width="85%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info"><span class="skill-name">MySQL</span><span class="skill-pct">70%</span></div>
+              <div class="skill-bar">
+                <div class="skill-fill" data-width="70%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tools -->
+        <div class="skill-category">
+          <div class="skill-cat-title"><i class="fas fa-tools"></i> Tools & Workflow</div>
+          <div class="skill-items">
+            <div class="skill-item">
+              <div class="skill-info"><span class="skill-name">Git</span><span class="skill-pct">80%</span></div>
+              <div class="skill-bar">
+                <div class="skill-fill" data-width="80%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info"><span class="skill-name">GitHub</span><span class="skill-pct">82%</span></div>
+              <div class="skill-bar">
+                <div class="skill-fill" data-width="82%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info"><span class="skill-name">VS Code</span><span class="skill-pct">90%</span></div>
+              <div class="skill-bar">
+                <div class="skill-fill" data-width="90%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info"><span class="skill-name">Responsive Design</span><span
+                  class="skill-pct">88%</span></div>
+              <div class="skill-bar">
+                <div class="skill-fill" data-width="88%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tech chips -->
+      <div class="tech-chips reveal" style="transition-delay: 0.25s">
+        <div class="tech-chip"><i class="devicon-html5-plain colored"></i> HTML5</div>
+        <div class="tech-chip"><i class="devicon-css3-plain colored"></i> CSS3</div>
+        <div class="tech-chip"><i class="devicon-javascript-plain colored"></i> JavaScript</div>
+        <div class="tech-chip"><i class="devicon-tailwindcss-plain colored"></i> Tailwind</div>
+        <div class="tech-chip"><i class="devicon-bootstrap-plain colored"></i> Bootstrap</div>
+        <div class="tech-chip"><i class="devicon-sass-original colored"></i> SASS</div>
+        <div class="tech-chip"><i class="devicon-git-plain colored"></i> Git</div>
+        <div class="tech-chip"><i class="devicon-github-original" style="color:var(--text-primary)"></i> GitHub</div>
+        <div class="tech-chip"><i class="fab fa-wordpress" style="color:#21759b"></i> WordPress</div>
+        <div class="tech-chip"><i class="devicon-mysql-plain colored"></i> MySQL</div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ══════════════════════════════════════
+     PROJECTS
+══════════════════════════════════════ -->
+  <section id="projects" class="section projects">
+    <div class="container">
+      <div class="projects-header reveal">
+        <div>
+          <span class="section-tag">// projects</span>
+          <h2 class="section-title">My <span class="gradient-text">Work</span></h2>
+          <p class="section-subtitle">A selection of learning and practice projects I've built.</p>
+        </div>
+        <!--
+      TODO: Add your GitHub profile link below
+      Replace '#' with your actual GitHub URL, e.g. https://github.com/your-username
+      -->
+        <a href="https://github.com/Zainab19hm" class="btn btn-secondary" target="_blank" rel="noopener">
+          <i class="fab fa-github"></i> View All on GitHub
+        </a>
+      </div>
+
+      <div class="projects-grid">
+        <!-- ── PROJECT 1 ──────────────────────────────────────────────
+           TODO: Replace with your real project.
+           - Change the title, description, and tags
+           - Replace the placeholder icon/colors with a screenshot:
+             Add a screenshot to assets/ and use:
+             <img src="assets/project1.png" alt="Project Name" style="width:100%;height:100%;object-fit:cover;">
+             inside the .project-img div (remove the .project-placeholder-img div)
+           - Update the href values on the overlay buttons and project links
+           ─────────────────────────────────────────────────────────── -->
+        <div class="project-card reveal">
+          <div class="project-img">
+            <div class="project-placeholder-img p1">
+              <i class="fas fa-shopping-cart"></i>
+              <span>// project screenshot</span>
+            </div>
+            <div class="project-overlay">
+              <a href="#" class="overlay-btn" title="Live Demo" target="_blank"><i
+                  class="fas fa-external-link-alt"></i></a>
+              <a href="#" class="overlay-btn" title="GitHub Repo" target="_blank"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-tags">
+              <span class="project-tag">HTML</span>
+              <span class="project-tag">CSS</span>
+              <span class="project-tag">JavaScript</span>
+            </div>
+            <h3 class="project-title">E-Commerce Landing Page</h3>
+            <p class="project-desc">
+              A fully responsive e-commerce landing page with product listings, a shopping cart UI,
+              and smooth animations. Built as a learning project to practice layout and JavaScript DOM manipulation.
+            </p>
+            <div class="project-footer">
+              <div class="project-links">
+                <!-- TODO: Replace '#' with live demo URL -->
+                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                <!-- TODO: Replace '#' with your GitHub repo URL -->
+                <a href="#" class="project-link"><i class="fab fa-github"></i> Code</a>
+              </div>
+              <span class="project-status status-learning">Learning</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card reveal" style="transition-delay:0.1s">
+          <div class="project-img">
+            <div class="project-placeholder-img p2">
+              <i class="fab fa-wordpress"></i>
+              <span>// project screenshot</span>
+            </div>
+            <div class="project-overlay">
+              <a href="#" class="overlay-btn" title="Live Demo" target="_blank"><i
+                  class="fas fa-external-link-alt"></i></a>
+              <a href="#" class="overlay-btn" title="GitHub Repo" target="_blank"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-tags">
+              <span class="project-tag">WordPress</span>
+              <span class="project-tag">CSS</span>
+              <span class="project-tag">MySQL</span>
+            </div>
+            <h3 class="project-title">Business Portfolio Website</h3>
+            <p class="project-desc">
+              A custom WordPress website for a small business, featuring a responsive theme,
+              custom post types, contact forms, and database-driven content.
+              Demonstrates real-world WordPress development skills.
+            </p>
+            <div class="project-footer">
+              <div class="project-links">
+                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                <a href="#" class="project-link"><i class="fab fa-github"></i> Code</a>
+              </div>
+              <span class="project-status status-done">Completed</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- ── PROJECT 3 ──────────────────────────────────────────────
+           TODO: Replace with your real project. Same instructions as Project 1.
+           ─────────────────────────────────────────────────────────── -->
+        <div class="project-card reveal" style="transition-delay:0.2s">
+          <div class="project-img">
+            <div class="project-placeholder-img p3">
+              <i class="fas fa-tasks"></i>
+              <span>// project screenshot</span>
+            </div>
+            <div class="project-overlay">
+              <a href="#" class="overlay-btn" title="Live Demo" target="_blank"><i
+                  class="fas fa-external-link-alt"></i></a>
+              <a href="#" class="overlay-btn" title="GitHub Repo" target="_blank"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-tags">
+              <span class="project-tag">HTML</span>
+              <span class="project-tag">Tailwind</span>
+              <span class="project-tag">JavaScript</span>
+            </div>
+            <h3 class="project-title">Task Manager App</h3>
+            <p class="project-desc">
+              A clean and minimal task management application with CRUD functionality,
+              local storage persistence, drag-and-drop support, and dark mode.
+              A practice project for vanilla JavaScript mastery.
+            </p>
+            <div class="project-footer">
+              <div class="project-links">
+                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                <a href="#" class="project-link"><i class="fab fa-github"></i> Code</a>
+              </div>
+              <span class="project-status status-learning">Learning</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- ── PROJECT 4 ──────────────────────────────────────────────
+           TODO: Replace with your real project. Same instructions as Project 1.
+           ─────────────────────────────────────────────────────────── -->
+        <div class="project-card reveal" style="transition-delay:0.3s">
+          <div class="project-img">
+            <div class="project-placeholder-img p4">
+              <i class="fas fa-graduation-cap"></i>
+              <span>// project screenshot</span>
+            </div>
+            <div class="project-overlay">
+              <a href="#" class="overlay-btn" title="Live Demo" target="_blank"><i
+                  class="fas fa-external-link-alt"></i></a>
+              <a href="#" class="overlay-btn" title="GitHub Repo" target="_blank"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-tags">
+              <span class="project-tag">Bootstrap</span>
+              <span class="project-tag">SASS</span>
+              <span class="project-tag">MySQL</span>
+            </div>
+            <h3 class="project-title">University Course Portal</h3>
+            <p class="project-desc">
+              A university course management portal designed for SPU, showcasing
+              Bootstrap layout skills, SASS theming, and a MySQL-backed data structure concept.
+              A collaborative academic project.
+            </p>
+            <div class="project-footer">
+              <div class="project-links">
+                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                <a href="#" class="project-link"><i class="fab fa-github"></i> Code</a>
+              </div>
+              <span class="project-status status-done">Completed</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ══════════════════════════════════════
+     WORDPRESS SECTION
+══════════════════════════════════════ -->
+  <section id="wordpress" class="section wordpress">
+    <div class="container">
+      <div class="wp-inner">
+        <!-- Left: info -->
+        <div class="reveal">
+          <span class="section-tag">// wordpress</span>
+          <h2 class="section-title">WordPress <span class="gradient-text">Expertise</span></h2>
+          <p class="section-subtitle">
+            Beyond raw code, I build complete, production-ready websites with WordPress —
+            the platform powering over 40% of the web.
+          </p>
+
+          <div class="wp-features">
+            <div class="wp-feature">
+              <div class="wp-icon"><i class="fas fa-paint-brush"></i></div>
+              <div class="wp-feature-text">
+                <h4>Custom Theme Development</h4>
+                <p>Building pixel-perfect WordPress themes from scratch using PHP, HTML, and CSS.</p>
+              </div>
+            </div>
+            <div class="wp-feature">
+              <div class="wp-icon"><i class="fas fa-plug"></i></div>
+              <div class="wp-feature-text">
+                <h4>Plugin Integration</h4>
+                <p>Configuring and customising plugins like WooCommerce, Elementor, ACF, and Contact Form 7.</p>
+              </div>
+            </div>
+            <div class="wp-feature">
+              <div class="wp-icon"><i class="fas fa-database"></i></div>
+              <div class="wp-feature-text">
+                <h4>MySQL & Database</h4>
+                <p>Designing and managing MySQL databases for dynamic WordPress-powered content.</p>
+              </div>
+            </div>
+            <div class="wp-feature">
+              <div class="wp-icon"><i class="fas fa-mobile-alt"></i></div>
+              <div class="wp-feature-text">
+                <h4>Responsive & SEO-ready</h4>
+                <p>Ensuring all WordPress sites are fully responsive, fast, and optimised for search engines.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: WP card -->
+        <div class="wp-visual reveal" style="transition-delay: 0.2s">
+          <div class="wp-logo-big"><i class="fab fa-wordpress"></i></div>
+          <h3>WordPress Developer</h3>
+          <p>
+            I work with WordPress not just as a theme user, but as a developer — understanding
+            the loop, hooks, and the template hierarchy to build custom solutions.
+          </p>
+          <div class="wp-tools">
+            <span class="wp-tool">Custom Themes</span>
+            <span class="wp-tool">Elementor</span>
+            <span class="wp-tool">WooCommerce</span>
+            <span class="wp-tool">ACF</span>
+            <span class="wp-tool">Contact Form 7</span>
+            <span class="wp-tool">Yoast SEO</span>
+            <span class="wp-tool">Child Themes</span>
+            <span class="wp-tool">Template Hierarchy</span>
+            <span class="wp-tool">MySQL</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ══════════════════════════════════════
+     EDUCATION
+══════════════════════════════════════ -->
+  <section id="education" class="section education">
+    <div class="container">
+      <div class="reveal">
+        <span class="section-tag">// education</span>
+        <h2 class="section-title">My <span class="gradient-text">Journey</span></h2>
+        <p class="section-subtitle">Academic background and milestones.</p>
+      </div>
+
+      <div class="edu-timeline">
+        <!-- Current University -->
+        <div class="edu-item reveal">
+          <div class="edu-dot"></div>
+          <div class="edu-card">
+            <div class="edu-year">📍 2022 — Present</div>
+            <h3 class="edu-title">B.Sc. Software Engineering</h3>
+            <p class="edu-school">Syrian Private University (SPU) — 5th Year</p>
+            <div class="edu-badges">
+              <span class="edu-badge">Software Engineering</span>
+              <span class="edu-badge">Database Systems</span>
+              <span class="edu-badge">Web Development</span>
+              <span class="edu-badge">Data Structures</span>
+              <span class="edu-badge">Algorithms</span>
+              <span class="edu-badge">Networks</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Self-learning / Online -->
+        <div class="edu-item reveal" style="transition-delay: 0.15s">
+          <div class="edu-dot"></div>
+          <div class="edu-card">
+            <div class="edu-year">📍 2020 — Present</div>
+            <h3 class="edu-title">Self-taught Frontend & WordPress</h3>
+            <p class="edu-school">Online Platforms — Continuous Learning</p>
+            <div class="edu-badges">
+              <span class="edu-badge">HTML / CSS / JS</span>
+              <span class="edu-badge">Tailwind CSS</span>
+              <span class="edu-badge">Bootstrap</span>
+              <span class="edu-badge">SASS</span>
+              <span class="edu-badge">WordPress</span>
+              <span class="edu-badge">Git & GitHub</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- High School -->
+        <div class="edu-item reveal" style="transition-delay: 0.25s">
+          <div class="edu-dot"></div>
+          <div class="edu-card">
+            <div class="edu-year">📍 Pre-2022</div>
+            <h3 class="edu-title">High School — Scientific Branch</h3>
+            <p class="edu-school">Syria</p>
+            <div class="edu-badges">
+              <span class="edu-badge">Mathematics</span>
+              <span class="edu-badge">Physics</span>
+              <span class="edu-badge">Science</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <section id="contact" class="section contact">
+    <div class="container">
+      <div class="reveal">
+        <span class="section-tag">// contact</span>
+        <h2 class="section-title">Get In <span class="gradient-text">Touch</span></h2>
+        <p class="section-subtitle">Have a project in mind or just want to say hello? I'd love to hear from you.</p>
+      </div>
+
+      <div class="contact-inner" style="margin-top: 48px;">
+        <!-- LEFT: Links -->
+        <div class="reveal">
+          <h3 style="font-size:1.2rem;font-weight:700;margin-bottom:8px;">Let's Connect</h3>
+          <p style="color:var(--text-secondary);font-size:0.95rem;line-height:1.8;">
+            Whether it's a freelance project, a collaboration, or a question,
+            feel free to reach out through any of the channels below.
+          </p>
+
+          <div class="contact-links">
+
+            <a href="tel:+963XXXXXXXXX" class="contact-link">
+              <div class="contact-icon"><i class="fas fa-phone"></i></div>
+              <div class="contact-link-text">
+                <div class="label">// phone</div>
+                <div class="value">+963 948 539 667</div>
+              </div>
+            </a>
+
+            <a href="https://github.com/Zainab19hm" class="contact-link" target="_blank" rel="noopener">
+              <div class="contact-icon" style="background: linear-gradient(135deg,#333,#555)"><i
+                  class="fab fa-github"></i></div>
+              <div class="contact-link-text">
+                <div class="label">// github</div>
+                <div class="value">Zainab19hm</div>
+              </div>
+            </a>
+
+
+            <a href="https://linkedin.com/in/zeannab-alhommsi" class="contact-link" target="_blank" rel="noopener">
+              <div class="contact-icon" style="background: linear-gradient(135deg,#0077b5,#00a0dc)"><i
+                  class="fab fa-linkedin-in"></i></div>
+              <div class="contact-link-text">
+                <div class="label">// linkedin</div>
+                <div class="value">Zeannab Alhommsi</div>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <!-- RIGHT: Form -->
+        <div class="contact-cta reveal" style="transition-delay: 0.2s">
+          <h3>Send a Message</h3>
+          <p>
+            Fill out the form and I'll get back to you as soon as possible.
+          </p>
+
+          <form class="contact-form" id="contactForm">
+            <div class="form-grid">
+              <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Your name" required />
+              </div>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="your@email.com" required />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <input type="text" id="subject" name="subject" placeholder="What's this about?" required />
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" placeholder="Tell me more..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center;">
+              <i class="fas fa-paper-plane"></i> Send Message
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ══════════════════════════════════════
+     FOOTER
+══════════════════════════════════════ -->
+  <footer>
+    <div class="container">
+      <p>
+        &copy; 2024 <span>Zaenaab Al-Hommsi</span>.
+        Designed & Built with <span style="color:#f770a4">♥</span> by Zaenaab.
+      </p>
+      <p style="margin-top:8px;">
+        <!--
+        TODO: update the GitHub link below if you host this on GitHub Pages
+      -->
+        Frontend Developer &amp; WordPress Expert &mdash; Syrian Private University
+      </p>
+    </div>
+  </footer>
+
+
+  <!-- Scripts -->
+  <script src="js/main.js"></script>
+</body>
+
+</html>
