@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Consultation Inquiry | Zaenaab Al-Hommsi</title>
+  <meta name="description" content="Inquire about frontend design layouts and WordPress custom development. Standalone consultation page with validation frameworks." />
+
+  <script>
+    const savedTheme = localStorage.getItem('theme') || 'dark';
+    document.documentElement.setAttribute('data-theme', savedTheme);
+  </script>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet" />
+  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/tasks.css" />
+</head>
+
+<body>
+
+  <nav class="tasks-navbar">
+    <div class="container tasks-navbar-inner">
+      <a href="index.html#showcase" class="tasks-nav-logo">
+        <span>&lt;</span>Z.Hommsi<span>/&gt;</span>
+      </a>
+
+      <div class="tasks-nav-links d-none d-lg-flex">
+        <a href="index.html#showcase" class="tasks-nav-link back-home"><i class="fas fa-th-large me-1"></i> Back to Grid</a>
+        <a href="blog.html" class="tasks-nav-link">Blogs</a>
+        <a href="store.html" class="tasks-nav-link">Store</a>
+        <a href="calculator.html" class="tasks-nav-link">Calculator</a>
+        <a href="form.html" class="tasks-nav-link active">Consultation Form</a>
+      </div>
+
+      <div class="d-flex align-items-center gap-2 tasks-nav-actions">
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+          <div class="toggle-thumb"><i class="fas fa-sun"></i></div>
+        </button>
+        <button class="tasks-hamburger" id="tasksMobileToggle" aria-label="Toggle Menu">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <div class="tasks-nav-mobile" id="tasksNavMobile">
+    <a href="index.html#showcase"><i class="fas fa-th-large me-2"></i>Back to Grid</a>
+    <a href="blog.html">Blogs</a>
+    <a href="store.html">Store</a>
+    <a href="calculator.html">Calculator</a>
+    <a href="form.html" class="active">Consultation Form</a>
+  </div>
+
+  <main class="tasks-page-content">
+    <div class="container py-4">
+
+      <div class="row mt-3 mt-lg-5 g-4 g-lg-5">
+        
+        <div class="col-12 col-lg-5">
+          <div class="h-100 d-flex flex-column justify-content-center pe-lg-3">
+            <span class="section-tag">// Professional Consultation</span>
+            <h1 class="form-info-title text-gradient fw-extrabold">Let's build something exceptional.</h1>
+            <p class="form-info-desc">
+              Have an application design problem, a WordPress custom theme requirement, or need a pixel-perfect, responsive interface? Let's align. Send a consultation request, and I will analyze your requirements.
+            </p>
+
+            <div class="form-benefits-list">
+              <div class="d-flex gap-3 mb-4 form-benefit-item">
+                <div class="form-benefit-icon">
+                  <i class="fas fa-graduation-cap"></i>
+                </div>
+                <div class="form-benefit-text">
+                  <h4>Software Engineering Focus</h4>
+                  <p>Applying standard software architecture principles from my 5th year B.Sc. studies at Syrian Private University (SPU).</p>
+                </div>
+              </div>
+
+              <div class="d-flex gap-3 mb-4 form-benefit-item">
+                <div class="form-benefit-icon">
+                  <i class="fas fa-stopwatch"></i>
+                </div>
+                <div class="form-benefit-text">
+                  <h4>24-Hour Average Response</h4>
+                  <p>Inquiries are reviewed and processed within one business day. You'll receive a detailed email briefing.</p>
+                </div>
+              </div>
+
+              <div class="d-flex gap-3 mb-4 form-benefit-item">
+                <div class="form-benefit-icon">
+                  <i class="fas fa-clipboard-check"></i>
+                </div>
+                <div class="form-benefit-text">
+                  <h4>No Obligations</h4>
+                  <p>Initial project mappings and design consults are completely free. We align on scope, budget, and technologies first.</p>
+                </div>
+              </div>
+            </div>
+            
+            <div class="mt-4 pt-3 border-top border-secondary-subtle d-none d-lg-block" style="border-style:dashed !important;">
+              <span class="text-muted" style="font-size:0.8rem; font-family:var(--font-code);">
+                // Phone Support: +963 948 539 667
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-lg-7">
+          <div class="card form-container-card border-0 p-4 p-md-5">
+            
+            <div class="form-container-header text-center mb-4">
+              <i class="fas fa-handshake-angle text-gradient"></i>
+              <h3>Book a Tech Consultation</h3>
+              <p>Fill out the fields below to send a validated project inquiry.</p>
+            </div>
+            
+            <div class="form-container-body">
+              <form id="consultationForm" class="needs-validation" novalidate>
+                <div class="form-floating mb-4">
+                  <input type="text" class="form-control" id="consultationName" placeholder="Zainab Al-Hommsi" required />
+                  <label for="consultationName"><i class="fas fa-user me-2"></i>Full Name</label>
+                  <div class="invalid-feedback">
+                    Please provide your name so we can address you properly.
+                  </div>
+                </div>
+
+                <div class="form-floating mb-4">
+                  <input type="email" class="form-control" id="consultationEmail" placeholder="name@domain.com" required />
+                  <label for="consultationEmail"><i class="fas fa-envelope me-2"></i>Email Address</label>
+                  <div class="invalid-feedback" id="emailFeedback">
+                    Please enter a valid email address.
+                  </div>
+                </div>
+
+                <div class="form-floating mb-4">
+                  <select class="form-select" id="consultationService" required>
+                    <option value="" selected disabled>Choose a service</option>
+                    <option value="frontend">Custom Frontend Development (HTML/CSS/JS)</option>
+                    <option value="wordpress">WordPress Development &amp; Theme Customs</option>
+                    <option value="uiux">UI/UX Layout Prototyping</option>
+                    <option value="other">General Tech Collaboration</option>
+                  </select>
+                  <label for="consultationService"><i class="fas fa-briefcase me-2"></i>Service Category</label>
+                  <div class="invalid-feedback">
+                    Please select a service category for your project.
+                  </div>
+                </div>
+
+                <div class="form-floating mb-4">
+                  <textarea class="form-control" id="consultationMessage" placeholder="Leave a comment here" style="height: 150px" required></textarea>
+                  <label for="consultationMessage"><i class="fas fa-edit me-2"></i>Project Details &amp; Message</label>
+                  <div class="invalid-feedback">
+                    Please describe your project requirements in a few lines.
+                  </div>
+                </div>
+
+                <div class="form-check mb-4">
+                  <input class="form-check-input" type="checkbox" id="consultationAgree" required />
+                  <label class="form-check-label text-secondary" for="consultationAgree">
+                    I confirm that the details entered above are accurate and ready for review.
+                  </label>
+                  <div class="invalid-feedback">
+                    You must confirm the terms before submitting.
+                  </div>
+                </div>
+
+                <button class="btn btn-primary w-100 py-3" type="submit" id="formSubmitBtn">
+                  <i class="fas fa-paper-plane me-2"></i>Send Request
+                </button>
+              </form>
+            </div>
+
+            <div class="form-success-card text-center" id="formSuccessCard" style="display: none;">
+              <div class="success-icon-wrapper">
+                <i class="fas fa-circle-check"></i>
+              </div>
+              <h3>Request Submitted Successfully!</h3>
+              <p class="text-secondary">
+                Thank you for reaching out, <strong id="successNameSpan"></strong>. We have received your request regarding <strong id="successServiceSpan"></strong> and sent a confirmation link to <span id="successEmailSpan" class="text-gradient font-code"></span>.
+              </p>
+              <button class="btn btn-secondary btn-sm mt-3" id="resetFormViewBtn">
+                Submit Another Request
+              </button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/tasks.js"></script>
+</body>
+
+</html>

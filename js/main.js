@@ -1,12 +1,6 @@
-/* =========================================================
-   main.js – Zaenaab Al-Hommsi Portfolio
-   ========================================================= */
-
-// ── Theme Toggle ──────────────────────────────────────────
 const themeToggle = document.getElementById('themeToggle');
 const root = document.documentElement;
 
-// Load saved theme (default: dark)
 const savedTheme = localStorage.getItem('theme') || 'dark';
 root.setAttribute('data-theme', savedTheme);
 updateToggleIcon(savedTheme);
@@ -28,7 +22,6 @@ function updateToggleIcon(theme) {
   }
 }
 
-// ── Navbar Scroll Effect ──────────────────────────────────
 const navbar = document.getElementById('navbar');
 
 window.addEventListener('scroll', () => {
@@ -40,7 +33,6 @@ window.addEventListener('scroll', () => {
   updateActiveNav();
 });
 
-// ── Active Nav Link on Scroll ─────────────────────────────
 const sections = document.querySelectorAll('section[id]');
 const navLinks = document.querySelectorAll('.nav-links a');
 
@@ -57,7 +49,6 @@ function updateActiveNav() {
   });
 }
 
-// ── Hamburger Mobile Menu ─────────────────────────────────
 const hamburger = document.getElementById('hamburger');
 const mobileNav = document.getElementById('mobileNav');
 
@@ -66,7 +57,6 @@ hamburger.addEventListener('click', () => {
   mobileNav.classList.toggle('open');
 });
 
-// Close mobile nav on link click
 mobileNav.querySelectorAll('a').forEach(link => {
   link.addEventListener('click', () => {
     hamburger.classList.remove('open');
@@ -74,14 +64,12 @@ mobileNav.querySelectorAll('a').forEach(link => {
   });
 });
 
-// ── Scroll Reveal ─────────────────────────────────────────
 const reveals = document.querySelectorAll('.reveal');
 const revealObserver = new IntersectionObserver(
   (entries) => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
         entry.target.classList.add('visible');
-        // Stagger children if they have .reveal-child
         const children = entry.target.querySelectorAll('.reveal-child');
         children.forEach((child, i) => {
           setTimeout(() => child.classList.add('visible'), i * 100);
@@ -93,7 +81,6 @@ const revealObserver = new IntersectionObserver(
 );
 reveals.forEach(el => revealObserver.observe(el));
 
-// ── Skill Bars Animation ──────────────────────────────────
 const skillFills = document.querySelectorAll('.skill-fill');
 const skillObserver = new IntersectionObserver(
   (entries) => {
@@ -109,7 +96,6 @@ const skillObserver = new IntersectionObserver(
 );
 skillFills.forEach(el => skillObserver.observe(el));
 
-// ── Typed Effect in Hero ──────────────────────────────────
 const typedEl = document.getElementById('typed');
 const roles = [
   'Frontend Developer',
@@ -143,7 +129,6 @@ function type() {
 }
 type();
 
-// ── Counter Animation ─────────────────────────────────────
 const counters = document.querySelectorAll('.counter');
 const counterObserver = new IntersectionObserver(
   (entries) => {
@@ -168,7 +153,6 @@ const counterObserver = new IntersectionObserver(
 );
 counters.forEach(el => counterObserver.observe(el));
 
-// ── Smooth Scroll for anchor links ───────────────────────
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   anchor.addEventListener('click', function (e) {
     e.preventDefault();
@@ -179,13 +163,10 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   });
 });
 
-// ── Contact Form (placeholder handler) ───────────────────
 const contactForm = document.getElementById('contactForm');
 if (contactForm) {
   contactForm.addEventListener('submit', (e) => {
     e.preventDefault();
-    // TODO: Replace this with your actual form submission logic
-    // e.g., EmailJS, Formspree, or a backend API call
     const btn = contactForm.querySelector('.btn-primary');
     const originalText = btn.innerHTML;
     btn.innerHTML = '<i class="fas fa-check"></i> Message Sent!';
